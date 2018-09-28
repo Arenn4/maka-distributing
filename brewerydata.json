@@ -52,11 +52,11 @@
     {
         "name": "Local Option Bierwerker",
         "links": "http://localoptionbier.com/",
-        "logo": ""
+        "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/LOBIERWERKERLOGO.ai"
     },
     {
         "name": "The Ale Apothecary",
         "links": "https://thealeapothecary.com/",
-        "logo": ""
+        "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ale+apothecary.jpg"
     }
 ]
