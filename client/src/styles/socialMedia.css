@@ -1,0 +1,20 @@
+.instaImg {
+    opacity: 1;
+}
+
+#instafeed a:hover {
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
+}
+
+
+
+#instafeed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+}
