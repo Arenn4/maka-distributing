@@ -10,8 +10,8 @@ import Footer from './components/Footer'
 class App extends Component {
   render() {
     return (
-      <div >
-        <Navbar />
+      <div className="wrapper">
+        <Navbar/>
         <Home/>
         <Brands/>
         <SocialMedia/>
