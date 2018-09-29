@@ -1,25 +1,37 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect} from 'react-redux'
+import { getBrands } from '../redux'
 
-const Brands = () => {
+// import:  redux function  & connect
+class Brands extends Component {
+        constructor () {
+            super()
+               
+    }
+
+componentDidMount() {
+    this.props.breweryData()
+}
+
+
+
+
+    render () {
+
     return (
+    // this.props.brands.map(beer)
         <div>
             <h1>Our Brands</h1>
-            <ul>
-                <li> Bent River Brewing</li>
-                    <p> name </p>
-                    <p> links</p>
-                    <p> logo </p>
-                <li>Blue Blood Brewing</li>
-                <li>Bur Oak Brewing</li>
-                <li>Logsdon Farmhouse Ales</li>
-                <li>People's Brewing</li>
-                <li>Trinit Brewing</li>
-                <li>Wyldewood Cellars</li>
-                <li>Shcorschbrau</li>
-                <li>Tony Chachere's</li>
-            </ul>
+            { this.props.breweryData.map(beers => <h1>{ beers.name }</h1>)}
+
         </div>
-    );
+
+        );
+    }
 };
 
-export default Brands;
+// connect state to redux
+// & get action exportDefaultConnect(state => state, {getBreweryData }...then name of component in () )
+// connect
+
+export default connect(state => state, { getBrands } )(Brands);
