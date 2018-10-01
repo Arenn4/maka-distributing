@@ -1,8 +1,17 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0
+}
+
 body {
     /* background-color: black; */
     margin: 0;
- }
- .wrapper {
+}
+
+.wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 500px;
@@ -12,32 +21,39 @@ body {
     'e e f'
     'i g g'
     'h h h'
+}
 
- }
-
- .a {
+.a {
     grid-area: a;
- }
- .b {
+}
+
+.b {
     grid-area: b;
- }
- .c {
+}
+
+.c {
     grid-area: c;
- }
- .d {
+}
+
+.d {
     grid-area: d;
- }
- .e {
+}
+
+.e {
     grid-area: e;
- }
- .f {
+}
+
+.f {
     grid-area: f;
- }
- .g {
+}
+
+.g {
     grid-area: g;
  }
- .i {
+.i {
     grid-area: i;
- .h {
+}
+.h {
     grid-area: h;
  }
+
