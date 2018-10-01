@@ -1,5 +1,5 @@
 import React from 'react';
-import Instafeed from "instafeed.js"
+import Instafeed from "instafeed"
 
 
 import '../styles/socialMedia.css'
@@ -12,16 +12,16 @@ const SocialMedia = () => {
         limit: 4,
         resolution: 'low_resolution',
         accessToken: process.env.REACT_APP_IG_TOKEN,
-        filter: function(image) {
+        filter: function (image) {
             return image.tags.indexOf('craftbeer') >= 0;
         }
     });
     userFeed.run();
 
-  
 
-  
-        
+
+
+
 
 
     return (
@@ -29,7 +29,7 @@ const SocialMedia = () => {
             social media
             instagram feed
 
-            
+
             <div id="instafeed"></div>
         </div>
     );
