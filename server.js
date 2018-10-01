@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 //connect to mongo
-mongoose.connect(`mongodb://localhost:27017/brewery-db`, { useNewUrlParser: true}, )
+mongoose.connect(`mongodb://localhost:27017/brewery-db`, { useNewUrlParser: true} )
     .then(() => console.log("MongoDB is now connected"))
     .catch(err => console.error(err))
 
