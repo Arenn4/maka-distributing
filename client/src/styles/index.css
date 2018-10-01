@@ -10,7 +10,7 @@ body {
     'a a b'
     'c d d'
     'e e f'
-    'g g g'
+    'i g g'
     
 
  }
@@ -32,4 +32,10 @@ body {
  }
  .f {
     grid-area: f;
+ }
+ .g {
+    grid-area: g;
+ }
+ .i {
+    grid-area: i;
  }
