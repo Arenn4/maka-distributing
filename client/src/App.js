@@ -20,7 +20,7 @@ class App extends Component {
         <BrandsSide/><Brands/>
         <SocialMedia/><SocialMediaSide/>
         <ContactSide/><Contact/>
-        {/* <Footer/>  */}
+        <Footer/>
 
       </div>
     );

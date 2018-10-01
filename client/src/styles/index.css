@@ -11,7 +11,7 @@ body {
     'c d d'
     'e e f'
     'i g g'
-    
+    'h h h'
 
  }
 
@@ -38,4 +38,6 @@ body {
  }
  .i {
     grid-area: i;
+ .h {
+    grid-area: h;
  }
