@@ -1,8 +1,10 @@
+
 import React from "react";
 import "../styles/home.css";
 import logo from "../images/LogoSkullBones.jpg";
 
-const Home = () => {
+
+const HomeSide = () => {
   return (
     <div className="b">
       <div className="homeSide">
@@ -19,4 +21,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeSide;

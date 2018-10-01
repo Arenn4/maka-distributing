@@ -8,7 +8,7 @@ import SocialMedia from './components/SocialMedia'
 import SocialMediaSide from './components/SocialMediaSide'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-
+import ContactSide from './components/ContactSide'
 
 
 class App extends Component {
@@ -19,8 +19,8 @@ class App extends Component {
         <Home/><HomeSide/>
         <BrandsSide/><Brands/>
         <SocialMedia/><SocialMediaSide/>
-        <Contact/>
-        {/* <Footer/>  */}
+        <ContactSide/><Contact/>
+        <Footer/>
 
       </div>
     );

@@ -9,7 +9,7 @@ const SocialMedia = () => {
         get: 'user',
         userId: '6691095851',
         limit: 4,
-        resolution: 'low_resolution',
+        resolution: 'thumbnail',
         accessToken: process.env.REACT_APP_IG_TOKEN,
         filter: function (image) {
             return image.tags.indexOf('craftbeer') >= 0;
