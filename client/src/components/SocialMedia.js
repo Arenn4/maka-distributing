@@ -1,5 +1,5 @@
 import React from 'react';
-import Instafeed from "instafeed.js"
+import Instafeed from "instafeed"
 import '../styles/socialMedia.css'
 
 console.log(process.env)
