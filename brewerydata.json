@@ -1,62 +1,62 @@
 [
-    {
-        "name": "Bent River Brewing",
-        "links": "https://www.bentriverbrewing.com/",
-        "logo": ""
-    },
-    {
-        "name": "Blue Blood Brewing",
-        "links": "http://bluebloodbrewing.com/home/",
-        "logo": ""
-    },
-    {
-        "name": "Bur Oak Brewing",
-        "links": "https://buroakbeer.com/",
-        "logo": ""
-    },
-    {
-        "name": "Nine Band Brewing",
-        "links": "http://www.ninebandbrewing.com/#our-beer",
-        "logo": ""
-    },
-    {
-        "name": "Cellarmen's",
-        "links": "https://cellarmens.com/beverages/",
-        "logo": ""
-    },
-    {
-        "name": "Wylewood Cellars",
-        "links": "http://www.wyldewoodillinois.com/index.html",
-        "logo": ""
-    },
-    {
-        "name": "Wild Blossom Meadery",
-        "links": "http://www.wildblossommeadery.com/",
-        "logo": ""
-    },
-    {
-        "name": "People's Brewing",
-        "links": "http://peoplesbrew.com/#home",
-        "logo": ""
-    },
-    {
-        "name": "Trinity Brewing",
-        "links": "http://www.trinitybrew.com/",
-        "logo": ""
-    },
-    {
-        "name": "Logsdon Farmhouse Ales",
-        "links": "http://www.farmhousebeer.com/home.html",
-        "logo": ""
-    },
-    {
-        "name": "Local Option Bierwerker",
-        "links": "http://localoptionbier.com/",
-        "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/LOBIERWERKERLOGO.ai"
-    },
-    {
-        "name": "The Ale Apothecary",
-        "links": "https://thealeapothecary.com/",
-        "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ale+apothecary.jpg"
-    }
+  {
+    "name": "Bent River Brewing",
+    "links": "https://www.bentriverbrewing.com/",
+    "logo": "http://img1.wsimg.com/isteam/ip/064616c7-56bc-4374-878c-e8eec079b1a1/3d953299-aec0-4f68-bd60-5b8c945dfabb.png/:/"
+  },
+  {
+    "name": "Blue Blood Brewing",
+    "links": "http://bluebloodbrewing.com/home/",
+    "logo": "http://img1.wsimg.com/isteam/ip/064616c7-56bc-4374-878c-e8eec079b1a1/3de0d729-b68b-48a5-84b0-9c916cacd977.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25"
+  },
+  {
+    "name": "Bur Oak Brewing",
+    "links": "https://buroakbeer.com/",
+    "logo": "http://img1.wsimg.com/isteam/ip/064616c7-56bc-4374-878c-e8eec079b1a1/6b15785c-6d05-4720-96a3-a0bda9664dd1.png/:/"
+  },
+  {
+    "name": "Nine Band Brewing",
+    "links": "http://www.ninebandbrewing.com/#our-beer",
+    "logo": ""
+  },
+  {
+    "name": "Cellarmen's",
+    "links": "https://cellarmens.com/beverages/",
+    "logo": ""
+  },
+  {
+    "name": "Wylewood Cellars",
+    "links": "http://www.wyldewoodillinois.com/index.html",
+    "logo": ""
+  },
+  {
+    "name": "Wild Blossom Meadery",
+    "links": "http://www.wildblossommeadery.com/",
+    "logo": ""
+  },
+  {
+    "name": "People's Brewing",
+    "links": "http://peoplesbrew.com/#home",
+    "logo": ""
+  },
+  {
+    "name": "Trinity Brewing",
+    "links": "http://www.trinitybrew.com/",
+    "logo": ""
+  },
+  {
+    "name": "Logsdon Farmhouse Ales",
+    "links": "http://www.farmhousebeer.com/home.html",
+    "logo": ""
+  },
+  {
+    "name": "Local Option Bierwerker",
+    "links": "http://localoptionbier.com/",
+    "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/LOBIERWERKERLOGO.ai"
+  },
+  {
+    "name": "The Ale Apothecary",
+    "links": "https://thealeapothecary.com/",
+    "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ale+apothecary.jpg"
+  }
 ]
