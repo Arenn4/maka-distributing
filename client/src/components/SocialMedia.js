@@ -1,8 +1,7 @@
 import React from 'react';
-import Instafeed from "instafeed"
-
-
+import Instafeed from "instafeed.js"
 import '../styles/socialMedia.css'
+
 console.log(process.env)
 const SocialMedia = () => {
 
@@ -18,18 +17,8 @@ const SocialMedia = () => {
     });
     userFeed.run();
 
-
-
-
-
-
-
     return (
-        <div>
-            social media
-            instagram feed
-
-
+        <div className="e">
             <div id="instafeed"></div>
         </div>
     );

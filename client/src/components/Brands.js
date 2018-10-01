@@ -9,19 +9,22 @@ class Brands extends Component {
     }
 
     componentDidMount() {
-        this.props.breweryData();
+        this.props.getBrands()
     }
 
+
+
+
     render() {
+
         return (
             // this.props.brands.map(beer)
-            <div>
+            <div className="d">
                 <h1>Our Brands</h1>
-                {this.props.breweryData.map(beers => (
-                    <h1>{beers.name}</h1>
-                ))}
+                {this.props.breweryData.map(beers => <h1>{beers.name}</h1>)}
+
             </div>
-        );
+        )
     }
 }
 

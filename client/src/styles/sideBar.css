@@ -1,0 +1,9 @@
+.sideBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    height: 100%;
+}
