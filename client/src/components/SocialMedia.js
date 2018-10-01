@@ -11,7 +11,7 @@ const SocialMedia = () => {
         limit: 4,
         resolution: 'low_resolution',
         accessToken: process.env.REACT_APP_IG_TOKEN,
-        filter: function(image) {
+        filter: function (image) {
             return image.tags.indexOf('craftbeer') >= 0;
         }
     });
