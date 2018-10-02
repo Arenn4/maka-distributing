@@ -46,7 +46,7 @@ export const signUp = (userInfo) => {
         })
         .catch(err => {
             console.error(err);
-            dispatch(authError("signup", err.res.status));
+            dispatch(authError("signup", err.response.status));
         })
     }
 }
@@ -68,7 +68,7 @@ export const login = (credentials) => {
         })
         .catch((err) => {
             console.error(err);
-            dispatch(authError("signup", err.res.status));
+            dispatch(authError("login", err.response.status));
         })
     }
 }
