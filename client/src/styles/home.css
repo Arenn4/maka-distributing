@@ -12,6 +12,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   color: white;
+  font-size: 20px;
 }
 
 .homeSide {
@@ -27,7 +28,7 @@
 
 .homeh1 {
   color: black;
-  /* color: rgb(196, 59, 49); */
+  font-size: 40px;
 }
 
 h4 {
