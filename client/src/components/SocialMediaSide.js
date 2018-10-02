@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className="f">
             <div className="sideBar">
-                EVENTS
+                EventS
             </div>
         </div>
     );
