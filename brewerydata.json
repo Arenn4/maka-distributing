@@ -22,7 +22,7 @@
   {
     "name": "Cellarmen's",
     "links": "https://cellarmens.com/beverages/",
-    "logo": ""
+    "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/cellarmen.jpg"
   },
   {
     "name": "Wylewood Cellars",
@@ -58,5 +58,10 @@
     "name": "The Ale Apothecary",
     "links": "https://thealeapothecary.com/",
     "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/aleApothecary.png"
+  },
+  {
+    "name": "Superstition Meadery",
+    "link": "http://www.superstitionmeadery.com/",
+    "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/superstitionMeadery.png"
   }
 ]
