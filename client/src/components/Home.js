@@ -6,7 +6,7 @@ const Home = () => {
     <div className="a">
       <div className="home">
         <h1 className="homeh1">AJ Maka Distributing</h1>
-        <h4>GROWING YOUR BRAND THROUGHOUT CHICAGOLAND</h4>
+        <h4>GROWING YOUR BRAND IN CHICAGOLAND</h4>
       </div>
       <div className="counties">
         <span>Cook</span>
