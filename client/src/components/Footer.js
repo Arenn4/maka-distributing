@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="h">
       <div className="footer">
-        <div className="a">
+        <div className="x">
           <div className="footerText">
             <p>
               <h3 className="headerText">A.J. Maka Distributors</h3>
@@ -25,13 +25,13 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="b">
+        <div className="y">
           <div className="admin">
             <i class="fas fa-user-circle" />
             <span>admin</span>
           </div>
         </div>
-        <div className="c">
+        <div className="z">
           <div className="footerIcons">
             <i class="fab fa-twitter-square" />
             <i class="fab fa-instagram" />

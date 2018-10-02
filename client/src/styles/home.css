@@ -1,20 +1,39 @@
 .home {
-  background-image: url("https://images.unsplash.com/photo-1498830204877-434556b153df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=87bf5545cab0e4c06c71e62bcd80a3f3&auto=format&fit=crop&w=2250&q=80");
-  /* background-image: url("https://images.unsplash.com/photo-1514527680268-3db26b911869?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=565328b9adcae22a975701e1d3a190b6&auto=format&fit=crop&w=800&q=60"); */
-  height: 100%;
-  /* color: white; */
-  color: brown;
-  /* background-image: url("https://images.unsplash.com/photo-1536784058511-2fac13abf62a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dde68c942eecb31c2ff77b5b777004&auto=format&fit=crop&w=2850&q=80"); */
-  /* background-image: url("https://images.unsplash.com/photo-1519859570182-99a448c5775a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=05ecf12ae3fc8fd626ff8b39b387a658&auto=format&fit=crop&w=2850&q=80"); */
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.counties {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
 }
 
 .homeSide {
-  background-color: black;
+  background-color: rgba(12, 4, 4, 0.993);
   height: 100%;
   color: white;
 }
 
-.logo {
-  height: 200px;
-  width: 200px;
+.blank {
+  height: 500px;
+  width: 400px;
+}
+
+.homeh1 {
+  color: black;
+  /* color: rgb(196, 59, 49); */
+}
+
+h4 {
+  color: white;
+}
+
+p {
+  color: white;
 }
