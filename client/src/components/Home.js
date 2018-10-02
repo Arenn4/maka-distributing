@@ -13,7 +13,7 @@ const Home = () => {
                 {/* <img src="https://images.unsplash.com/photo-1536784058511-2fac13abf62a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dde68c942eecb31c2ff77b5b777004&auto=format&fit=crop&w=2850&q=80"/> */}
                 <h2>Craft Beer Starts with Us</h2>
                 <img src="Logo"/>
-                    <h3>Growing YOUR craft beer brand in Chicagoland</h3>
+                    <h3>Growing YOUR brand in Chicagoland</h3>
             </div>
         </div>
     );
