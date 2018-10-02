@@ -1,9 +1,16 @@
+@font-face {
+    font-family: 'deadFont';
+    src: url('../fonts/TheDeadAreComing.ttf'); 
+}
 .sideBar{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     color: white;
-    font-size: 3em;
+    /* background-color: white;
+    color: black; */
+    font-size: 5em;
     height: 100%;
+    font-family: 'deadFont';
 }

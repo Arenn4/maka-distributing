@@ -5,7 +5,7 @@ const ContactSide = () => {
     return (
         <div className="i">
             <div className="sideBar">
-                contact side
+                ContacT
             </div>
         </div>
     );
