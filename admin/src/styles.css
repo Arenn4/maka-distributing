@@ -1,0 +1,41 @@
+
+
+
+
+.header{
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+
+
+
+
+.login{
+    background-color: grey;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputs{
+    width: 200px;
+    height: 20px;
+}
+
+.editWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.editBox{
+    width: 320px;
+}
+.images{
+    height: 100px;
+    width: 100px;
+}

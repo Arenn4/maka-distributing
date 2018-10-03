@@ -20,7 +20,7 @@ brewerRouter.route('/')
     })
 
     //get one id specifically, delete one specifically, update on specifically
-brewerRouter.route('./:id')
+brewerRouter.route('/:id')
     .get((req, res) => {
         brewers.findById(req.params.id, (err, foundBrewer) => {
             if(err) return res.status(500).send(err)
