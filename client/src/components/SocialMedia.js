@@ -6,9 +6,9 @@ console.log(process.env);
 const SocialMedia = () => {
   var userFeed = new Instafeed({
     get: "user",
-    userId: '6691095851',
+    userId: "6691095851",
     limit: 3,
-    resolution: 'standard_resolution',
+    resolution: "standard_resolution",
     accessToken: process.env.REACT_APP_IG_TOKEN,
 
     filter: function(image) {

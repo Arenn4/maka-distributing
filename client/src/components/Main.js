@@ -1,27 +1,27 @@
-import React, { Component } from 'react';
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import HomeSide from './components/HomeSide'
-import Brands from './components/Brands'
-import BrandsSide from './components/BrandsSide'
-import SocialMedia from './components/SocialMedia'
-import SocialMediaSide from './components/SocialMediaSide'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import ContactSide from './components/ContactSide'
-
+import React, { Component } from "react";
+import Home from "./Home";
+import HomeSide from "./HomeSide";
+import Brands from "./Brands";
+import BrandsSide from "./BrandsSide";
+import SocialMedia from "./SocialMedia";
+import SocialMediaSide from "./SocialMediaSide";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import ContactSide from "./ContactSide";
 
 class Main extends Component {
   render() {
     return (
       <div className="wrapper">
-        
-        <Home/><HomeSide/>
-        <BrandsSide/><Brands/>
-        <SocialMedia/><SocialMediaSide/>
-        <ContactSide/><Contact/>
-        <Footer/>
-
+        <Home />
+        <HomeSide />
+        <BrandsSide />
+        <Brands />
+        <SocialMedia />
+        <SocialMediaSide />
+        <ContactSide />
+        <Contact />
+        <Footer />
       </div>
     );
   }

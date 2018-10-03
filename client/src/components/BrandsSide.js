@@ -4,9 +4,7 @@ import "../styles/sideBar.css";
 const BrandSide = () => {
   return (
     <div className="c">
-      <div className="sideBar">
-        Our brandS
-      </div>
+      <div className="sideBar">Our Brands</div>
     </div>
   );
 };
