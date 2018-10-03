@@ -22,11 +22,10 @@ const initState = {
     }
 }
 
-//Actions:  get requests, post, put
-
+//GET DATA
 export const getBrands = () => {
     return dispatch => { 
-        axios.get(`/brewers`).then(res => {
+        newAxios.get(`/brewers`).then(res => {
             dispatch({
                 type: "GET_BRANDS",
                 breweryData: res.data
@@ -35,11 +34,47 @@ export const getBrands = () => {
     }
 }
 
+//POST NEW DATA
+export const addBrands = (newBrand) => {
+    return dispatch => {
+        newAxios.post("/brewers", newBrand).then(res => {
+            dispatch({
+                type: "ADD_BRANDS",
+                breweryData: res.data
+            })
+        })
+    }
+}
+
+//UPDATE CURRENT DATA
+export const updateBrands = (_id, obj) => {
+    return dispatch => {
+        newAxios.put(`/brewers/${_id}`, obj).then(res => {
+            dispatch({
+                type: "UPDATE_BRANDS",
+                breweryData: res.data
+            })
+        })
+    }
+}
+
+//DELETE AN ITEM IN OUR DATA
+export const deleteBrands = (_id) => {
+    return dispatch => {
+        newAxios.delete(`/brewers/${_id}`).then(res => {
+            dispatch({
+                type: "DELETE_BRANDS",
+                _id
+            })
+        })
+    }
+}
+
 //unsure about this part and authenticate
 export const signUp = (userInfo) => {
     return dispatch => {
-        axios.post("/auth/signup",  userInfo).then(res => {
-            const {token, user} = res.data
+        newAxios.post("/auth/signup",  userInfo).then(response => {
+            const {token, user} = response.data
             localStorage.setItem("token", token)
             localStorage.setItem("user", JSON.stringify(user))
             dispatch(authenticate(user))
@@ -50,7 +85,7 @@ export const signUp = (userInfo) => {
         })
     }
 }
-//authenticate
+//authenticate DOUBLE CHECK THIS SHIT
 export const authenticate = user => {
     return {
         type: "AUTHENTICATE",
@@ -60,8 +95,8 @@ export const authenticate = user => {
 //login
 export const login = (credentials) => {
     return dispatch => {
-        axios.post("/auth/login", credentials).then(res => {
-            const {token, user} = res.data;
+        newAxios.post("/auth/login", credentials).then(response => {
+            const {token, user} = response.data;
             localStorage.setItem("token", token)
             localStorage.setItem("user", JSON.stringify(user))
             dispatch(authenticate(user))
@@ -72,8 +107,8 @@ export const login = (credentials) => {
         })
     }
 }
-//logout
-export const logOut = () => {
+//logout DOUBLE CHECK THIS 
+export const logout = () => {
     localStorage.removeItem("token")
     localStorage.removeItem("user")
     return {
@@ -81,7 +116,7 @@ export const logOut = () => {
     }
 }
 
-//error handling
+//error handling DOUBLE CHECK THIS
 export const authError = (key, errCode) => {
     return {
         type: "AUTH_ERROR",
@@ -95,18 +130,30 @@ export const authError = (key, errCode) => {
 const reducer = (prevState = initState, action) => {
     switch (action.type){
         case "GET_BRANDS":
-            return{
+            return {
                 breweryData: action.breweryData
             }
+        case "ADD_BRANDS":
+            return {
+                breweryData: [...prevState.breweryData, action.breweryData]
+            }
+        case "UPDATE_BRANDS":
+            return {
+                breweryData: prevState.breweryData.map(brewers => brewers._id === action.breweryData._id ? action.breweryData : brewers)
+            }
+        case "DELETE_BRANDS":
+            return {
+                breweryData: prevState.breweryData.filter(brewers => brewers._id !== action._id)
+            }
         case "AUTHENTICATE":
-            return{
+            return {
                 breweryData: action.prevState,
                 ...prevState,
                 ...action.user,
                 isAuthenticated: true
             }
         case "LOG_OUT":
-            return prevState
+            return initState
         default:
             return prevState
     }
