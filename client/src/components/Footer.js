@@ -7,35 +7,35 @@ const Footer = () => {
       <div className="footer">
         <div className="x">
           <div className="footerText">
-            <p>
-              <h3 className="headerText">A.J. Maka Distributors</h3>
+            <div>
+              <h3 className="footerh3">A.J. Maka Distributors</h3>
               <br />
-              <span>470 W Crossroads Pkwy #B, Bolingbrook, Illinois 60440</span>
+              <span5>470 W Crossroads Pkwy #B, Bolingbrook, Illinois 60440</span5>
               <br />
-              <span>
-                <i class="fas fa-phone fa-flip-horizontal" /> (630) 546-0663
-              </span>
+              <span5>
+                <i className="fas fa-phone fa-flip-horizontal" /> (630) 546-0663
+              </span5>
               <br />
-              <span>Mon-Sun: By Appt.</span>
+              <span5>Mon-Sun: By Appt.</span5>
               <br />
-              <span>
-                <i class="far fa-envelope" />
+              <span5>
+                <i className="far fa-envelope" />
                 ajmaka@ajmakadistributors.com
-              </span>
-            </p>
+              </span5>
+            </div>
           </div>
         </div>
         <div className="y">
           <div className="admin">
-            <i class="fas fa-user-circle" />
+            <i className="fas fa-user-circle" />
             <span>admin</span>
           </div>
         </div>
         <div className="z">
           <div className="footerIcons">
-            <i class="fab fa-twitter-square" />
-            <i class="fab fa-instagram" />
-            <i class="fab fa-facebook-square" />
+            <a href="https://twitter.com/ajmakadistro?lang=en"><i className="fab fa-twitter-square" /></a>
+            <a href="https://www.instagram.com/ajmakadistro/"><i className="fab fa-instagram" /></a>
+            <a href="https://www.facebook.com/pages/A-J-Maka-Distributors/676586775809191"><i className="fab fa-facebook-square" /></a>
           </div>
         </div>
       </div>

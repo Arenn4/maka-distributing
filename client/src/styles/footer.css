@@ -7,7 +7,7 @@
   grid-column-gap: 0px;
   grid-auto-rows: auto;
   grid-template-areas: "x y z";
-  padding-top: 20px;
+  padding-top: 100px;
 }
 .x {
   grid-area: x;
@@ -28,7 +28,8 @@
   margin: 0px;
 }
 .admin {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'Alegreya SC', serif;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
@@ -36,15 +37,24 @@
   margin: 10px;
 }
 .footerText {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'Alegreya SC', serif;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction:  row;
   justify-content: center;
+  align-items:  flex-end;
   width: 100%;
   margin: 0px;
   flex-flow: wrap;
   font-size: 1.3em;
 }
-.headerText {
+.footerh3 {
+  color:  White;
   margin: 0px;
+  font-family: 'Alegreya SC', serif;
+}
+
+span5 {
+  color:  grey;
+  font-family: 'Alegreya SC', serif;
 }

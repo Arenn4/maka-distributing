@@ -16,8 +16,8 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 500px;
   grid-template-areas:
-    "a a b"
-    "c d d"
+    "a a a"
+    "c d b"
     "e e f"
     "i g g"
     "h h h";
@@ -25,11 +25,12 @@ body {
 
 .a {
   grid-area: a;
-  background-color: rgb(155, 55, 30);
+  background-color: white;
 }
 
 .b {
   grid-area: b;
+  background-color: black;
 }
 
 .c {
@@ -38,6 +39,7 @@ body {
 
 .d {
   grid-area: d;
+  background-color:  black;
 }
 
 .e {
@@ -56,4 +58,5 @@ body {
 }
 .h {
   grid-area: h;
+  height:  200px;
 }

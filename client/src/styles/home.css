@@ -1,5 +1,11 @@
+/* @font-face {
+  font-family: "deadFont";
+  src: url("../fonts/TheDeadAreComing.ttf");
+} */
+
+
 .home {
-  height: 80%;
+  background-color:  white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,33 +13,60 @@
   color: white;
 }
 
-.counties {
+/* .counties {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   color: white;
-}
+} */
 
-.homeSide {
-  background-color: rgba(12, 4, 4, 0.993);
-  height: 100%;
-  color: white;
-}
 
-.blank {
-  height: 500px;
-  width: 400px;
-}
+.homeImg {
+  padding-top:  30px;
+  /* height:  400px;
+  width:  300px; */
+} 
 
 .homeh1 {
   color: black;
-  /* color: rgb(196, 59, 49); */
+  font-family: 'Alegreya SC', serif;
+  padding-bottom: 20px;
+  font-size: 7em;
+  padding-left: 60px;
+  text-shadow: 5px 5px 20px rgb(88, 82, 82);
 }
 
-h4 {
-  color: white;
+.homeh4 {
+  color: rgb(155, 48, 41);
+  font-family: 'Alegreya SC', serif;
+  font-size: 2em;
+  font-weight:  bold;
 }
 
-p {
-  color: white;
+
+span1 {
+  color: rgb(155, 48, 41);
+  font-family: 'Forum', cursive;
+  font-weight:  bold;
+  text-shadow: 1px 1px 3px white;
 }
+
+span {
+  color:gray;
+  font-family: "Bowlby One SC", cursive;
+  font-size: 1em;
+}
+
+
+
+
+
+/* <img className="blank" src={blank} /> */
+/* <img className="logo" src={logo} /> */
+
+
+/* font-family: 'Covered By Your Grace', cursive; */
+/* font-family: 'Julius Sans One', sans-serif; */
+/* font-family: 'Nothing You Could Do', cursive; */
+/* font-family: 'Fredericka the Great', cursive; */
+/* font-family: 'Forum', cursive; */
