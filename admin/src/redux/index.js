@@ -6,7 +6,7 @@ let newAxios = axios.create()
 
 newAxios.interceptors.request.use((config) => {
     const token = localStorage.getItem("token");
-    config.headers.Authorication = `Bearer ${token}`;
+    config.headers.Authorization = `Bearer ${token}`;
     return config;
 })
 
@@ -19,7 +19,8 @@ const initState = {
     authErrCode: {
         signup: "",
         login: ""
-    }
+    },
+    loading: true
 }
 
 //GET DATA
@@ -125,39 +126,70 @@ export const authError = (key, errCode) => {
     }
 }
 
+export const verify = () => {
+    return dispatch => {
+        newAxios.get("/api/brandlist").then(response => {
+            let { user } = response.data;
+            dispatch(authenticate(user));
+        }).catch(err => {
+            dispatch(authError("verify", err.response.status))
+        })
+    }
+}
 
  //Reducer:
 const reducer = (prevState = initState, action) => {
     switch (action.type){
         case "GET_BRANDS":
             return {
+                ...prevState,
                 breweryData: action.breweryData
             }
         case "ADD_BRANDS":
             return {
+                ...prevState,
                 breweryData: [...prevState.breweryData, action.breweryData]
             }
         case "UPDATE_BRANDS":
             return {
+                ...prevState,
                 breweryData: prevState.breweryData.map(brewers => brewers._id === action.breweryData._id ? action.breweryData : brewers)
             }
         case "DELETE_BRANDS":
             return {
+                ...prevState,
                 breweryData: prevState.breweryData.filter(brewers => brewers._id !== action._id)
             }
         case "AUTHENTICATE":
             return {
-                breweryData: action.prevState,
                 ...prevState,
-                ...action.user,
-                isAuthenticated: true
+                user: action.user,
+                isAuthenticated: true,
+                authErrCode: initState.authErrCode,
+                loading: false
             }
+        case "AUTH_ERROR":
+            return {
+                ...prevState,
+                authErrCode: {
+                    ...prevState.authErrCode,
+                    [action.key]: action.errCode
+                },
+                loading: false
+            }    
         case "LOG_OUT":
-            return initState
+            return {
+                ...initState,
+                loading: false
+            }
         default:
             return prevState
     }
 }
 
  
-export default createStore(reducer, applyMiddleware(thunk))
+export default createStore(
+    reducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+    applyMiddleware(thunk)
+)
