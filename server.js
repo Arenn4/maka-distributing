@@ -9,6 +9,7 @@ const sgMail = require("@sendgrid/mail");
 const brewerRouter = require("./routes/brewerRouter");
 const authRoutes = require("./routes/auth");
 const profileRoutes = require("./routes/profileRoutes")
+const path = require("path")
 
 // env.config();
 
@@ -26,11 +27,30 @@ mongoose.connect(`mongodb://localhost:27017/brewery-db`, { useNewUrlParser: true
 
 //decode jwt and add a req.body on all request send to /api
 app.use("/api", expressJwt({ secret: process.env.SECRET }));
+app.use((err, req, res, next) => {
+    console.error(Err);
+    if(err.name === "UnauthorizedError"){
+        res.status(err.status);
+    }
+    return res.send({ message: err.message})
+})
 
 //routes
 app.use("/brewers", brewerRouter);
 app.use("/auth", authRoutes);
 app.use("/api/profile", profileRoutes)
+
+//routes to specific react applications
+app.use('/', express.static(path.join(__dirname, "client", "build")));
+app.use('/admin', express.static(path.join(__dirname, "admin", "build")))
+
+app.get("/admin/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "admin", "build", "index.html"))
+})
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"))
+})
 
 //logic for sending email
 app.post("/send", (req, res) => {

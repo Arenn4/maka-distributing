@@ -11,9 +11,10 @@ const SocialMedia = () => {
     resolution: "standard_resolution",
     accessToken: process.env.REACT_APP_IG_TOKEN,
 
-    filter: function(image) {
-      return image.tags.indexOf("event") >= 0;
-    }
+    // filter: function (image) {
+    //   console.log(image)
+    //   return image.tags.indexOf("event") >= 0;
+    // }
   });
   userFeed.run();
 

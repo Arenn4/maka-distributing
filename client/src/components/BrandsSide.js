@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/sideBar.css";
 
-const BrandSide = () => {
+const BrandsSide = () => {
   return (
     <div className="c">
-      <div className="sideBar">Our Brands</div>
+      <div className="sideBar1">Brands...</div>
     </div>
   );
 };
 
-export default BrandSide;
+export default BrandsSide;
