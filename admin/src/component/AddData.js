@@ -34,13 +34,14 @@ class AddData extends Component {
     render() {
         return (
             <div>
-                <form className="" onSubmit={this.addItem}>
+                <form className="addData" onSubmit={this.addItem}>
                     <input 
                         type="text" 
                         value={this.state.name} 
                         onChange={this.handleChange} 
                         name="name"
                         placeholder="Brand Name" 
+                        className="addInputs" 
                     />
                     <input 
                         type="text" 
@@ -48,15 +49,17 @@ class AddData extends Component {
                         onChange={this.handleChange} 
                         name="links"
                         placeholder="Brand Link" 
+                        className="addInputs" 
                     />
                     <input 
                         type="text" 
                         value={this.state.logo} 
                         onChange={this.handleChange} 
                         name="logo"
-                        placeholder="Brand Logo" 
+                        placeholder="Brand Logo"
+                        className="addInputs"  
                     />
-                    <button>Add Brand</button>
+                    <button className="addBtn">Add Brand</button>
                 </form>
             </div>
         );
