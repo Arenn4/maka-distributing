@@ -41,33 +41,33 @@ class EditData extends Component{
     }
 
     //update function
-
+// onMouseLeave={this.props.swapStatus}
     render(){
     return (
-        <div>
-            <form onSubmit={this.updateItem}>
-            <input 
+        <div >
+            <form onSubmit={this.updateItem} className="edit-form">
+            <input className="editInputs" 
                 type="text" 
                 value={this.state.name} 
                 onChange={this.handleChange} 
                 name="name"
                 placeholder="Brand Name" 
                 />
-            <input 
+            <input className="editInputs" 
                 type="text" 
                 value={this.state.links} 
                 onChange={this.handleChange} 
                 name="links"
                 placeholder="Brand Link" 
                 />
-            <input 
+            <input className="editInputs" 
                 type="text" 
                 value={this.state.logo} 
                 onChange={this.handleChange} 
                 name="logo"
                 placeholder="Brand Logo" 
                 />
-                <button>Submit</button>
+                <button className="newData-btn">Submit</button>
             </form> 
         </div>
         );
