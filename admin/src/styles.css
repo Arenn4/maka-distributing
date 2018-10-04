@@ -21,6 +21,8 @@ input {
     display: grid;
     grid-template-columns: 150px auto 150px;
     align-items: center;
+    box-shadow: 5px  grey;
+    width: 100%;
 }
 .headerText{
     font-family: 'Hind', sans-serif;
@@ -53,10 +55,26 @@ input {
     padding: 5px;
 }
 
+.headerIcons{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.homeBtn{
+    font-size: 2.5em;
+    float: left;
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+.homeBtn:hover{
+    color: crimson;
+}
 
 .logOutText{
     padding: 5px;
-    margin: 15px;
+    /* margin: 15px; */
     font-size: 1.3em;
     cursor: pointer;
     border: 3px solid black;
@@ -168,6 +186,17 @@ input {
     color: white;
 }
 
+@media only screen and (max-width:540px){
+    .loginForm{
+        max-width: 700px;
+        min-width: 300px;
+    }
+}
+
+
+
+
+
 /* ///////////////////////////////ADD */
 
 .addData{
@@ -181,6 +210,9 @@ input {
     /* border: 2px solid black; */
     box-shadow: 5px 5px 5px grey;
     margin-bottom: 25px;
+    width: 100%;
+    padding-left: 10px;
+    padding-left: 10px;
 }
 
 .addBtn{
@@ -262,6 +294,7 @@ input {
     grid-gap: 25px;
     overflow: scroll;
     height: 100%;
+    width: 100%;
 
 }
 
@@ -394,3 +427,40 @@ input {
     background-color:crimson;
     color: white;
 }
+
+/* ///////////////////////  GLOBAL RESP0NSIVE*/
+
+@media only screen and (max-width: 1080px){
+    .addData{
+        padding-top: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    .addInputs{
+        width: 280px;
+    }
+    .editBox{
+        width: 250px;
+    }
+    .header{
+        grid-template-columns: 150px 50px 150px;
+    }
+    .editWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .brand-link{
+        font-size: .7em;
+    }
+    .editInputs{
+        width: 150px;
+    }
+    .newData-btn{
+        width: 150px;
+    }
+}
+

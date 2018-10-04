@@ -47,7 +47,7 @@
   {
     "name": "Logsdon Farmhouse Ales",
     "links": "http://www.farmhousebeer.com/home.html",
-    "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/logsdom.png"
+    "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/logsdon.png"
   },
   {
     "name": "Local Option Bierwerker",
@@ -63,5 +63,10 @@
     "name": "Superstition Meadery",
     "link": "http://www.superstitionmeadery.com/",
     "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/superstitionMeadery.png"
+  },
+  {
+    "name": "Caseys Brewing and Blending",
+    "link": "https://caseybrewing.com/",
+    "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/CaseyLogotmmed.jpg"
   }
 ]
