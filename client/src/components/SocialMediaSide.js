@@ -4,9 +4,7 @@ import '../styles/sideBar.css'
 const Home = () => {
     return (
         <div className="f">
-            <div className="sideBar">
-                EventS
-            </div>
+            <div className="sideBar">Events</div>
         </div>
     );
 };
