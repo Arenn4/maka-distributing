@@ -27,15 +27,21 @@ class Brands extends Component{
     render(){
     return (
         <div className="editBox">
-            <h4>{this.props.name}</h4>
-            <img src={this.props.logo} alt='' className="images"/>
-            <p>{this.props.links}</p>
-            <button onClick={this.handleDelete}>Delete</button>
+            <h3 className="brand-title">{this.props.name}</h3>
+            <img className="brand-images" src=
+                                                {this.props.logo
+                                                ? this.props.logo
+                                                : "https://www.freeiconspng.com/uploads/no-image-icon-15.png"} alt='' />
+                                                {/* this image^^^ was found on freeiconspng.com */}
+            <p className="brand-link">{this.props.links}</p>
+            <button className="edit-btn" onClick={this.changeDisplay}><i className="fas fa-edit"></i></button>
             {this.state.status
             ?
-            <button onClick={this.changeDisplay}>Edit Brand</button>
+            <div></div>
             :
-            <EditData items={{...this.props}} swapStatus={this.changeDisplay}/>}
+            <EditData items={{...this.props}} swapStatus={this.changeDisplay}/>
+            }
+            <button className="delete-btn" onClick={this.handleDelete}><i className="fas fa-trash-alt"></i></button>
         </div>
 
         );
