@@ -16,34 +16,55 @@ class Login extends Component{
             [e.target.name]: e.target.value
         })
     }
+
     handleSubmit = e => {
         e.preventDefault();
-        this.props.login(this.state.inputs);
-        this.clearInputs();
+        const credentials = {
+            username: this.state.username,
+            password: this.state.password
+        }
+        this.props.login(credentials)
+        this.setState(prevState => ({
+            username: '',
+            password: ''
+        }))
     }
 
     render(){
-        // inputs = { username, password } 
+        
+        let authErrCode = this.props.authErrCode.login;
+        let errMsg = ""
+        if (authErrCode < 500 && authErrCode > 399){
+            errMsg = "Invalid username or password!"
+        } else if (authErrCode > 499){
+            errMsg = "Server Error!"
+        }
+        console.log(errMsg)
     return (
         <div className="login">
-            
-            <span>Login</span>
-            <input 
-                className="inputs"
-                // value={username}
-                // onChange={}
-                type="text" 
-                placeholder="username"/>
-            <input 
-                className="inputs"
-                // value={password}
-                // onChange={}
-                type="text" 
-                placeholder="password"/>
-                <button>Login</button>
+            <form onSubmit={this.handleSubmit} className="loginForm">
+                <span className="loginText">Login:</span>
+                <input 
+                    className="inputs"
+                    name="username"
+                    value={this.state.username}
+                    onChange={this.handleChange}
+                    type="text" 
+                    placeholder="username"/>
+                <input 
+                    className="inputs"
+                    name="password"
+                    value={this.state.password}
+                    onChange={this.handleChange}
+                    type="text" 
+                    placeholder="password"/>
+                    <button className="loginBtn">Login</button>
+                    
+            </form>
+            <p>{errMsg}</p>
         </div>
         );
     }
 };
 
-export default connect(null, { login } ) (Login);
+export default connect(state => ({authErrCode: state.authErrCode}), { login } ) (Login);
