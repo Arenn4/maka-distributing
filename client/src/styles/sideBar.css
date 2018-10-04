@@ -8,9 +8,19 @@
     align-items: center;
     background-color: black;
     color: white;
-    /* background-color: white;
-    color: black; */
-    font-size: 5em;
+    font-size: 4em;
     height: 100%;
-    font-family: 'deadFont';
+    font-family: 'Alegreya SC', serif;
+}
+
+
+.sideBar1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 4em;
+    height: 100%;
+    font-family: 'Alegreya SC', serif;
 }

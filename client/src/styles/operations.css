@@ -1,0 +1,26 @@
+.operations {
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top:  150px;
+}
+
+.operationsh1 {
+    font-size: 4em;
+    height: 100%;
+    font-family: 'Alegreya SC', serif;
+    padding-bottom:  15px;
+}
+
+span2 {
+    font-family: 'Alegreya SC', serif;
+    color:  grey;
+    font-size:  1em;
+}
+
+
+
+
+
