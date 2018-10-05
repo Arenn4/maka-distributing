@@ -2,7 +2,7 @@
     font-family: 'deadFont';
     src: url('../fonts/TheDeadAreComing.ttf'); 
 }
-.sideBar{
+.sideBar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +11,7 @@
     font-size: 4em;
     height: 100%;
     font-family: 'Alegreya SC', serif;
+    padding-bottom:  0px;
 }
 
 
@@ -23,4 +24,37 @@
     font-size: 4em;
     height: 100%;
     font-family: 'Alegreya SC', serif;
+}
+
+
+
+@media only screen and (min-width: 319px) and (max-width: 599px){
+    .sideBar {
+        padding-top:  10px;
+        padding-bottom:  10px;
+        font-size: 1.5em;
+    }
+    
+    .sideBar1 {
+        padding-top: 10px;
+        font-size:  1.5em;
+ 
+    }
+}
+
+@media (min-width: 600px) {
+    .sidebar1 {
+        font-size:  2em;
+        height:  75%;
+    }
+
+    .sidebar {
+        font-size:  2em;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+
 }

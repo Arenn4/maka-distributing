@@ -18,7 +18,7 @@ class App extends Component {
 
         <Home /><Operations />
         <BrandsSide /><Brands />
-        <SocialMedia /><SocialMediaSide />
+        <SocialMediaSide /><SocialMedia />
         <ContactSide /><Contact />
         <Footer />
 
