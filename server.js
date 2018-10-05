@@ -28,7 +28,7 @@ mongoose.connect(`mongodb://localhost:27017/brewery-db`, { useNewUrlParser: true
 //decode jwt and add a req.body on all request send to /api
 app.use("/api", expressJwt({ secret: process.env.SECRET }));
 app.use((err, req, res, next) => {
-    console.error(Err);
+    console.error(err);
     if(err.name === "UnauthorizedError"){
         res.status(err.status);
     }

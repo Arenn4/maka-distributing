@@ -44,6 +44,7 @@ class Login extends Component{
         <div className="login">
             <form onSubmit={this.handleSubmit} className="loginForm">
                 <span className="loginText">Login:</span>
+                <p className="invalid-txt">{errMsg}</p>
                 <input 
                     className="inputs"
                     name="username"
@@ -61,7 +62,7 @@ class Login extends Component{
                     <button className="loginBtn">Login</button>
                     
             </form>
-            <p>{errMsg}</p>
+            
         </div>
         );
     }
