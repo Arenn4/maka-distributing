@@ -44,6 +44,21 @@
   
 }
 
+
+@media (max-width: 900px) {
+
+}
+
+
+@media (max-width: 600px) {
+
+  .carousel {
+    width:  400px;
+    height:  75%;
+  }
+}
+
+
 @media only screen and (min-width: 319px) and (max-width: 599px) {
 
     .carousel-inner {
@@ -55,23 +70,12 @@
       width:  319px;
       height:  350px;
     }
-}
-
-@media (max-width: 600px) {
-  .carousel {
-    width:  400px;
-    height:  75%;
-  
 
     .carousel-indicators {
       bottom:  -72px;
 
     }
-
   }
-}
 
-@media (max-width: 900px) {
 
-}
 
