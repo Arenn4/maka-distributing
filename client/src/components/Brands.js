@@ -27,7 +27,7 @@ class Brands extends Component {
       return (
         <Carousel.Item>
           {beers.logo.length > 0 ?
-            <a href={beers.links}><img className="logoBackground" src={beers.logo} /></a>
+            <a href={beers.links}><img className="logoBackground" src={beers.logo} alt=""/></a>
             : <div style={{
               backgroundColor: "black",
               width: "100%",
