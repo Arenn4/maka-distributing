@@ -7,12 +7,12 @@ const Operations = () => {
     <div className="b">
       <div className="operations">
         <h1 className="operationsh1">Operations</h1>
-        <span2>Cook</span2>
-        <span2>DuPage</span2>
-        <span2>Will</span2>
-        <span2>Lake</span2>
-        <span2>Kane</span2>
-        <span2>McHenry</span2>
+        <span>Cook</span>
+        <span>DuPage</span>
+        <span>Will</span>
+        <span>Lake</span>
+        <span>Kane</span>
+        <span>McHenry</span>
       </div>
     </div>
   );
