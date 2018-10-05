@@ -4,20 +4,49 @@
     justify-content: center;
     align-items: center;
     color: white;
-    padding-top:  150px;
+    /* padding-top:  150px; */
+    height:  100%;
+     background-color: black;
 }
 
 .operationsh1 {
     font-size: 4em;
-    height: 100%;
     font-family: 'Alegreya SC', serif;
     padding-bottom:  15px;
+    color:  white;
 }
 
-span2 {
+.operations span {
     font-family: 'Alegreya SC', serif;
     color:  grey;
-    font-size:  1em;
+    font-size:  1.5em;
+    /* padding-bottom:  30px; */
+}
+
+@media only screen and (min-width: 319px) and (max-width: 599px) {
+
+    .operations {
+        padding-top: 25px;
+    }
+    .operationsh1 {
+        font-size: 1.5em;
+        padding-bottom:  15px;
+        
+    }
+
+    .operations span {
+        font-size:  1em;
+        padding-bottom:  5px;
+    }
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 900px) {
+    
+
 }
 
 
