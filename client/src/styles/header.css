@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "deadFont";
-  src: url("/fonts/TheDeadAreComing.ttf");
+  src: url("../fonts/TheDeadAreComing.ttf");
 }
 
 .header {
-    height: 700px;
+    height: 670px;
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.73) 0%,
@@ -33,7 +33,6 @@
     text-align: center;
     color: rgb(223, 192, 18);
     font-family: "Diplomata SC", cursive;
-    /* padding: 100px; */
   }
   .logo {
     width: 400px;

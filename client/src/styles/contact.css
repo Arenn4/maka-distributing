@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "deadFont";
-  src: url("/fonts/TheDeadAreComing.ttf");
+  src: url("../fonts/TheDeadAreComing.ttf");
 }
 
 .contact-container {

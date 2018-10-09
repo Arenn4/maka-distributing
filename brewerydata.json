@@ -6,7 +6,7 @@
   },
   {
     "name": "Blue Blood Brewing",
-    "links": "http://bluebloodbrewing.com/home/",
+    "links": "https://bluebloodbrewing.com/home/",
     "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/blueBlood.png"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "Nine Band Brewing",
-    "links": "http://www.ninebandbrewing.com/#our-beer",
+    "links": "https://www.ninebandbrewing.com/#our-beer",
     "logo": ""
   },
   {
@@ -26,32 +26,32 @@
   },
   {
     "name": "Wylewood Cellars",
-    "links": "http://www.wyldewoodillinois.com/index.html",
+    "links": "https://www.wyldewoodillinois.com/index.html",
     "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/wyldewood.png"
   },
   {
     "name": "Wild Blossom Meadery",
-    "links": "http://www.wildblossommeadery.com/",
+    "links": "https://www.wildblossommeadery.com/",
     "logo": ""
   },
   {
     "name": "People's Brewing",
-    "links": "http://peoplesbrew.com/#home",
+    "links": "https://peoplesbrew.com/#home",
     "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/peoplesBrewing.jpg"
   },
   {
     "name": "Trinity Brewing",
-    "links": "http://www.trinitybrew.com/",
+    "links": "https://www.trinitybrew.com/",
     "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/trinity.png"
   },
   {
     "name": "Logsdon Farmhouse Ales",
-    "links": "http://www.farmhousebeer.com/home.html",
+    "links": "https://www.farmhousebeer.com/home.html",
     "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/logsdon.png"
   },
   {
     "name": "Local Option Bierwerker",
-    "links": "http://localoptionbier.com/",
+    "links": "https://localoptionbier.com/",
     "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/lobierwerker.png"
   },
   {
@@ -61,12 +61,12 @@
   },
   {
     "name": "Superstition Meadery",
-    "link": "http://www.superstitionmeadery.com/",
+    "links": "https://www.superstitionmeadery.com/",
     "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/superstitionMeadery.png"
   },
   {
     "name": "Caseys Brewing and Blending",
-    "link": "https://caseybrewing.com/",
+    "links": "https://caseybrewing.com/",
     "logo": "https://s3.us-east-2.amazonaws.com/brewer-logos/ak+images/CaseyLogotmmed.jpg"
   }
 ]

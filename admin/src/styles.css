@@ -288,10 +288,6 @@ input {
 
 
 .editWrapper{
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap; */
     display: grid;
     position: relative;
     grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
@@ -300,7 +296,6 @@ input {
     overflow: scroll;
     height: 100%;
     width: 100%;
-
 }
 
 /* //////////BrandList//////// */

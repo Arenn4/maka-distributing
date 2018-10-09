@@ -2,21 +2,47 @@
 
 @font-face {
   font-family: "deadFont";
-  src: url("/fonts/TheDeadAreComing.ttf");
+  src: url("../fonts/TheDeadAreComing.ttf");
 }
 
 /* ////////Brands//////////////// */
+.brands-title{
+    background-color: black;
+    /* background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.73) 0%,
+        rgba(0, 0, 0, 0.72) 100%
+      ),
+      url("https://images.unsplash.com/photo-1498830204877-434556b153df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=87bf5545cab0e4c06c71e62bcd80a3f3&auto=format&fit=crop&w=2250&q=80"); */
+    
+    color: rgba(255, 255, 255);
+    font-family: "deadFont";
+    font-size: 50px;
+    text-align: center;
+    padding: 25px;
+}
+
 .brands-container {
-    background-color: grey;
-    color: white;
+    /* background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.73) 0%,
+        rgba(0, 0, 0, 0.72) 100%
+      ),
+      url("https://images.unsplash.com/photo-1498830204877-434556b153df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=87bf5545cab0e4c06c71e62bcd80a3f3&auto=format&fit=crop&w=2250&q=80"); */
+    background-color: black;
+    color: black;
     font-family: "deadFont";
     font-size: 3em;
-    height: auto;
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 5px;
     padding-top: 25px;
-    padding-bottom: 25px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-bottom: 50px;
+    position: relative;
+    grid-template-columns: repeat(auto-fill,minmax(220px, 1fr));
+    justify-items: center;
+    grid-gap: 25px;
+    height: 100%;
+    width: 100%;
   }
 
 
@@ -25,18 +51,31 @@
   /* //////////BrandList////////// */
 
   .brand-box{
-      width: 300px;
-      border: 2px solid black;
-      box-shadow: 5px 5px 5px rgb(255, 254, 254);
-      
+    width: 240px;
+    display: grid;
+    justify-items: center;
+    height: auto;
+    /* background-image: url("https://www.ppt-backgrounds.net/thumbs/wanted-poster-for-cowboy-party-photo-presentation-backgrounds.jpg"); */
+  }
+
+  .brand-box:hover{
+    width: 245px;
+    height: 180px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+    background-color: white;
   }
 
   .brand-image{
-      width: 300px;
-      height: 300px;
+    grid-column: 1/-1;
+    height: 150px;
+    max-width: 200px;
+    margin: auto;
+    padding: 5px;
   }
 
   .brand-name{
-      font-size: 15px;
-      text-align: center;
+    font-size: 15px;
+    text-align: center;
+    display: none;
   }

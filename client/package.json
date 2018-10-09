@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "instafeed": "^2.0.0",
+    "instafeed.js": "^1.4.1",
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.2",
+    "react-instafeed": "^0.4.0",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.5",
     "redux": "^4.0.0",
