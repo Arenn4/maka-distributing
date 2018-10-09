@@ -1,89 +1,12 @@
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  background-color: grey;
-  height: 100%;
-  width: 100%;
-  font-family: 'Forum', cursive;
-  font-size:  1em;
+@import url("https://fonts.googleapis.com/css?family=Diplomata+SC");
+
+@font-face {
+  font-family: "deadFont";
+  src: url("/fonts/TheDeadAreComing.ttf");
 }
 
-.textInput {
-  font-size:  .8em;
-  width: 300px;
-  height: 60px;
-  border-style:  solid;
-  border-width:  .5px;
-  border-color:  black;
-  font-weight:  300;
-  color:  black;
-  padding-left:  5px;
-}
-.textAreaInput {
-  font-size:  .7em;
-  width: 300px;
-  height: 60px;
-  border-style:  solid;
-  border-width:  .5px;
-  border-color:  black;
-  font-weight: 300;
-  padding-left:  5px;
-}
-
-button {
-  width:  300px;
-  height: 50px;
-  background-color: black;
-  color:  white;
-  font-family: 'Alegreya SC', serif;
-}
-
-@media only screen and (min-width: 319px) and (max-width: 599px) {
-
-  .contact {
-  padding-top:  20px;
-  padding-bottom:  20px;
-  font-size:  .80em;
+.contact-container {
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.938);
+    padding: 5px;
   }
-
-  .textInput {
-    font-size:  .8em;
-    width:  200px;
-    height:  25px;
-    font-weight:  400;
-  }
-
-  .textAreaInput {
-    font-size:  .8em;
-    width: 200px;
-    height: 25px;
-    border-style:  solid;
-    border-width:  .5px;
-    border-color:  black;
-    font-weight: 400;
-  }
-
-  button {
-    width: 200px;
-    height:  25px;
-    border:  none;
-  }
-  
-}
-
-@media only screen and (min-width: 600px) and (max-width:  768) {
-
-}
-
-@media (max-width: 600px) {
-
-}
-
-@media (max-width: 900px) {
-
-}
-
-

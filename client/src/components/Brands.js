@@ -1,58 +1,33 @@
 import React, { Component } from "react";
-import { Carousel } from "react-bootstrap";
-import axios from "axios";
+import { connect } from 'react-redux';
+import { getBrands } from '../redux';
+import BrandList from './BrandList'
+import "../styles/brands.css"
 
-// import:  redux function  & connect
 class Brands extends Component {
   constructor() {
     super();
-    this.state = { breweryData: [] };
+    this.state = { 
+      breweryData: [] 
+    };
   }
 
   componentDidMount() {
-    axios.get(`/brewers`).then(res => {
-      this.setState({
-        breweryData: res.data
-      });
-    });
+    this.props.getBrands()
   }
-
-  render() {
-    console.log(this.props);
-    const mappedData = this.state.breweryData.map(beers => {
-      console.log(typeof beers.logo);
-
-      //  if beers.logo 
-
-      return (
-        <Carousel.Item>
-          {beers.logo.length > 0 ?
-            <a href={beers.links}><img className="logoBackground" src={beers.logo} alt=""/></a>
-            : <div style={{
-              backgroundColor: "black",
-              width: "100%",
-              height: "500px",
-              color: "white",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-end"
-            }}>{beers.name}</div>
-          }
-          {/* <Carousel.Caption>
-
-            <button><a className="beerName" href={beers.links}>{beers.name}</a></button>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-      );
-    });
-
+    render() {
     return (
-      // this.props.brands.map(beer)
-      <div className="d">
-        <Carousel>{mappedData}</Carousel>
+      <div className="brands-container">
+        {this.props.breweryData.map(brewers => {
+          return <BrandList 
+                    key={brewers._id}
+                    name={brewers.name}
+                    link={brewers.link}
+                    logo={brewers.logo}/>
+        })}
       </div>
-    );
+     )
   }
 }
 
-export default Brands;
+export default connect(state=>state, { getBrands}) (Brands);

@@ -1,4 +1,5 @@
 import { createStore, applyMiddleware } from "redux";
+
 import thunk from "redux-thunk";
 import axios from "axios";
 
@@ -34,64 +35,16 @@ export const getBrands = () => {
   };
 };
 
-//unsure about this part and authenticate
-export const signUp = userInfo => {
-  return dispatch => {
-    axios
-      .post("/auth/signup", userInfo)
-      .then(res => {
-        const { token, user } = res.data;
-        localStorage.setItem("token", token);
-        localStorage.setItem("user", JSON.stringify(user));
-        dispatch(authenticate(user));
+export const sendEmail = (msg) => {
+  return (dispatch) => {
+      axios.post(`/send`, msg).then(res => {
+          dispatch({
+              type: "SEND_EMAIL",
+          })
       })
-      .catch(err => {
-        console.error(err);
-        dispatch(authError("signup", err.response.status));
-      });
-  };
-};
-//authenticate
-export const authenticate = user => {
-  return {
-    type: "AUTHENTICATE",
-    user
-  };
-};
-//login
-export const login = credentials => {
-  return dispatch => {
-    axios
-      .post("/auth/login", credentials)
-      .then(res => {
-        const { token, user } = res.data;
-        localStorage.setItem("token", token);
-        localStorage.setItem("user", JSON.stringify(user));
-        dispatch(authenticate(user));
-      })
-      .catch(err => {
-        console.error(err);
-        dispatch(authError("login", err.response.status));
-      });
-  };
-};
-//logout
-export const logOut = () => {
-  localStorage.removeItem("token");
-  localStorage.removeItem("user");
-  return {
-    type: "LOG_OUT"
-  };
-};
+  }
+}
 
-//error handling
-export const authError = (key, errCode) => {
-  return {
-    type: "AUTH_ERROR",
-    key,
-    errCode
-  };
-};
 
 //Reducer:
 const reducer = (prevState = initState, action) => {
@@ -100,15 +53,8 @@ const reducer = (prevState = initState, action) => {
       return {
         breweryData: action.breweryData
       };
-    case "AUTHENTICATE":
-      return {
-        breweryData: action.prevState,
-        ...prevState,
-        ...action.user,
-        isAuthenticated: true
-      };
-    case "LOG_OUT":
-      return prevState;
+    case "SEND_EMAIL":
+          return;
     default:
       return prevState;
   }

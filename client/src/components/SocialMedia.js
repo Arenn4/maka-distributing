@@ -1,6 +1,6 @@
 import React from "react";
 import Instafeed from "instafeed";
-import "../styles/socialMedia.css";
+import "../styles/socialmedia.css";
 
 console.log(process.env);
 const SocialMedia = () => {
@@ -8,18 +8,17 @@ const SocialMedia = () => {
     get: "user",
     userId: "6691095851",
     limit: 3,
-    resolution: "standard_resolution",
-    accessToken: process.env.REACT_APP_IG_TOKEN,
-
-    // filter: function (image) {
-    //   console.log(image)
+    // filter: function(image) {
     //   return image.tags.indexOf("event") >= 0;
-    // }
+    // },
+    resolution: "standard_resolution",
+    accessToken: process.env.REACT_APP_IG_TOKEN
+    
   });
   userFeed.run();
 
   return (
-    <div className="e">
+    <div className="social-container">
       <div id="instafeed" />
     </div>
   );

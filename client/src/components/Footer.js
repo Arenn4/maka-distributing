@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/footer.css";
+import "../styles/footer.css"
 
 const Footer = () => {
   return (
-    <div className="h">
+    <div className="e">
       <div className="footer">
         <div className="footerContact">
           <h3 className="footerh3">A.J. Maka Distributors</h3>
@@ -19,7 +19,7 @@ const Footer = () => {
 
         <div className="admin"><a href="/admin" className="admin-link">
           <i className="fas fa-user-circle" />
-          <span>admin</span></a>
+          <span>Admin</span></a>
         </div>
 
         <div className="footerIcons">

@@ -1,102 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Diplomata+SC");
 
+@font-face {
+  font-family: "deadFont";
+  src: url("/fonts/TheDeadAreComing.ttf");
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .footer {
-  background-color: black;
-  color: white;
-  height: 100%;
-  display: grid;
-  grid-column: 1fr 1fr 1fr;
-  grid-column-gap: 0px;
-  grid-auto-rows: auto;
-  grid-template-areas: "h h h";
-  display:  flex;
-  flex-direction:  row;
-  justify-content:  space-around;
-  flex-flow:  wrap;
-  font-size:  1.3em;
-  width:  100%;
-  margin: 0px;
-  padding-top: 80px;
-}
-
-.footerh3 {
-  color:  White;
-  margin: 0px;
-  font-family: 'Alegreya SC', serif;
-}
-
-.footerContact span {
-  color:  grey;
-  font-family: 'Forum', cursive;
-  justify-content:  space-between;
-  width:  400px;
-}
-
-
-.admin {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: wrap;
-  font-size: 1.5em;
-  margin: 10px;
-}
-
-.admin-link {
-  color:  white;
-  text-decoration:  none;
-}
-
-.footerIcons {
-  /* padding-top: 10px; */
-  font-family:  'Alegreya SC', serif;
-  display: flex;
-  justify-content: space-between; 
-  flex-flow: wrap;
-  font-size: 2em;
-  margin: 0px;
-  color:  white;
-  width:  150px;
-}
-.footerIcons a:link, a:visited, a:active {
-  color: white;
-}
-@media only screen and (min-width: 319px) and (max-width: 599px) {
-
-  .footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-auto-rows: auto;
+    grid-template-areas: "h h h";
+    display:  flex;
+    flex-direction:  row;
+    justify-content:  space-around;
+    flex-flow:  wrap;
     font-size:  1.3em;
     width:  100%;
-    padding-top: 40px;
-    padding-left:  20px;
+    margin: 0px;
+    padding-top: 50px;
   }
-
+  
   .footerh3 {
-    padding-left:  10px;
-    font-size:  .75em;
+    color:  White;
+    margin: 0px;
+    font-size: 40px;
+    font-family: "Diplomata SC", cursive;
   }
+  
   .footerContact span {
-    padding-left:  5px;
-    font-size:  .65em;
-    padding-right:  5px;
+    color:  grey;
+    font-family: 'Roboto', sans-serif, cursive;
+    justify-content:  space-between;
+    width:  400px;
   }
-
-  .footerIcons {
-    font-size:  1em;
-    width: 75px;
-  }
-
+  
+  
   .admin {
-    font-size:  .75em;
-    justify-content:  left;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    font-size: 1.5em;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
   }
-
-}
-
-@media (max-width: 600px) {
-}
-
-@media (max-width: 900px) {
-
-}
-
-
-
+  
+  .admin-link {
+    color:  white;
+    text-decoration:  none;
+  }
+  
+  .footerIcons {
+    /* padding-top: 10px; */
+    font-family:  'Alegreya SC', serif;
+    display: flex;
+    justify-content: space-between; 
+    flex-flow: wrap;
+    font-size: 2em;
+    margin: 0px;
+    color:  white;
+    width:  150px;
+  }
+  .footerIcons a:link, a:visited, a:active {
+    color: white;
+  }
