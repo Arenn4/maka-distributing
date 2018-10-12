@@ -6,7 +6,40 @@
 }
 
 .contact-container {
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.938);
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.957);
     padding: 5px;
   }
+
+.input-field input[type=text]:focus + label {
+    color: rgb(223, 192, 18);
+}
+
+.contact-title{
+    background-color: rgba(6, 6, 6);
+    color: rgba(255, 255, 255);
+    font-family: "deadFont";
+    font-size: 50px;
+    text-align: center;
+    padding: 15px;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+    color: rgb(223, 192, 18) !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+border-bottom: 1px solid rgb(223, 192, 18)!important;
+box-shadow: 0 1px 0 0 rgb(223, 192, 18) !important
+}
+/* label focus color */
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: rgb(223, 192, 18) !important;
+   }
+
+/* label underline focus color */
+   .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid rgb(223, 192, 18) !important;
+    box-shadow: 0 1px 0 0 rgb(223, 192, 18) !important;
+   }

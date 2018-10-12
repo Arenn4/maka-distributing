@@ -3,7 +3,7 @@ import "../styles/footer.css"
 
 const Footer = () => {
   return (
-    <div className="e">
+    // <div className="e">
       <div className="footer">
         <div className="footerContact">
           <h3 className="footerh3">A.J. Maka Distributors</h3>
@@ -28,7 +28,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/pages/A-J-Maka-Distributors/676586775809191"><i className="fab fa-facebook-square" /></a>
         </div>
       </div >
-    </div >
+    // </div >
   );
 };
 

@@ -38,6 +38,7 @@ constructor(){
     render(){
       return (
           <div className="contact-container z-depth-4">
+          <div className="contact-title">Drop us a line</div>
               <div className="row">
                   <form onSubmit={this.sendMsg}className="col s12">
                       <div className="row">

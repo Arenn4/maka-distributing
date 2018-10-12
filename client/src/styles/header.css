@@ -5,6 +5,8 @@
   src: url("../fonts/TheDeadAreComing.ttf");
 }
 
+
+/* //////BASE HEADER CSS///////// */
 .header {
     height: 670px;
     background-image: linear-gradient(
@@ -24,12 +26,12 @@
     text-align: center;
   }
   .headerTitle {
-    font-size: 3.5em;
+    font-size: 5.5em;
     align-self: center;
     font-family: "Diplomata SC", cursive;
   }
   .headerSubTitle {
-    font-size: 1.7em;
+    font-size: 2.7em;
     text-align: center;
     color: rgb(223, 192, 18);
     font-family: "Diplomata SC", cursive;
@@ -39,3 +41,137 @@
     opacity: 0.8;
     filter: alpha(opacity=50);
   }
+
+
+  @media only screen and (max-width:1522px){
+    .headerTitle {
+        font-size: 4.5em;
+        align-self: center;
+        font-family: "Diplomata SC", cursive;
+      }
+      .headerSubTitle {
+        font-size: 1.7em;
+        text-align: center;
+        color: rgb(223, 192, 18);
+        font-family: "Diplomata SC", cursive;
+      }
+  }
+  @media only screen and (max-width:1325px){
+    .headerTitle {
+        font-size: 3.5em;
+        align-self: center;
+        font-family: "Diplomata SC", cursive;
+      }
+      .headerSubTitle {
+        font-size: 1.0em;
+        text-align: center;
+        color: rgb(223, 192, 18);
+        font-family: "Diplomata SC", cursive;
+      }
+  }
+
+  @media only screen and (max-width:1100px){
+    .headerTitle {
+        font-size: 2.5em;
+        align-self: center;
+        font-family: "Diplomata SC", cursive;
+      }
+      .headerSubTitle {
+        font-size: 1.0em;
+        text-align: center;
+        color: rgb(223, 192, 18);
+        font-family: "Diplomata SC", cursive;
+      }
+      .logo {
+        width: 300px;
+        opacity: 0.8;
+        filter: alpha(opacity=50);
+      }
+  }  
+
+  @media only screen and (max-width:790px){
+    .headerTitle {
+        font-size: 2.5em;
+        align-self: center;
+        font-family: "Diplomata SC", cursive;
+        
+      }
+      .headerSubTitle {
+        font-size: 1.0em;
+        text-align: center;
+        color: rgb(223, 192, 18);
+        font-family: "Diplomata SC", cursive;
+      }
+      .logo {
+        width: 250px;
+        opacity: 0.8;
+        filter: alpha(opacity=50);
+      }
+      .header {
+        height: 550px;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.73) 0%,
+            rgba(0, 0, 0, 0.72) 100%
+          ),
+          url("https://images.unsplash.com/photo-1498830204877-434556b153df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=87bf5545cab0e4c06c71e62bcd80a3f3&auto=format&fit=crop&w=2250&q=80");
+        margin: 0px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+
+  @media only screen and (max-width:486px){
+    .headerTitle {
+        font-size: 1.6em;
+        align-self: center;
+        font-family: "Diplomata SC", cursive;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .headerSubTitle {
+        font-size: .8em;
+
+        text-align: center;
+        color: rgb(223, 192, 18);
+        font-family: "Diplomata SC", cursive;
+      }
+      .logo {
+        width: 200px;
+        opacity: 0.8;
+        filter: alpha(opacity=50);
+      }
+      .header {
+        height: 480px;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.73) 0%,
+            rgba(0, 0, 0, 0.72) 100%
+          ),
+          url("https://images.unsplash.com/photo-1498830204877-434556b153df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=87bf5545cab0e4c06c71e62bcd80a3f3&auto=format&fit=crop&w=2250&q=80");
+        margin: 0px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+
+  @media only screen and (max-width:300px){
+    .headerTitle {
+        font-size: 1.3em;
+        align-self: center;
+        font-family: "Diplomata SC", cursive;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .headerSubTitle {
+        font-size: .5em;
+
+        text-align: center;
+        color: rgb(223, 192, 18);
+        font-family: "Diplomata SC", cursive;
+      }
+    }

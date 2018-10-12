@@ -9,12 +9,12 @@
 .footer {
     background-color: black;
     color: white;
-    height: 200px;
-    display: grid;
+    height: auto;
+    /* display: grid;
     grid-column: 1fr 1fr 1fr;
     grid-column-gap: 0px;
     grid-auto-rows: auto;
-    grid-template-areas: "h h h";
+    grid-template-areas: "h h h"; */
     display:  flex;
     flex-direction:  row;
     justify-content:  space-around;
@@ -23,6 +23,8 @@
     width:  100%;
     margin: 0px;
     padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 10px;
   }
   
   .footerh3 {
@@ -53,6 +55,9 @@
     color:  white;
     text-decoration:  none;
   }
+  .admin-link:hover{
+      color:rgb(223, 192, 18);
+  }
   
   .footerIcons {
     /* padding-top: 10px; */
@@ -68,3 +73,33 @@
   .footerIcons a:link, a:visited, a:active {
     color: white;
   }
+
+  .footerIcons a:hover{
+      color: rgb(223, 192, 18);
+  }
+
+@media only screen and (max-width:563px){
+    .footerh3 {
+        color:  White;
+        margin: 0px;
+        font-size: 1.8em;
+        font-family: "Diplomata SC", cursive;
+        text-align: center;
+        display: block;
+      }
+      
+      .footerContact{
+        color:  grey;
+        font-family: 'Roboto', sans-serif, cursive;
+        width:  400px;
+        font-size: .7em;
+        text-align: center;
+        display: block;
+        padding: 5px;
+      }
+      .footer {
+        padding-top: 25px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+}
