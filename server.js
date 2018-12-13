@@ -44,14 +44,6 @@ app.use("/api/profile", profileRoutes)
 app.use('/', express.static(path.join(__dirname, "client", "build")));
 app.use('/admin', express.static(path.join(__dirname, "admin", "build")))
 
-app.get("/admin/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "admin", "build", "index.html"))
-})
-
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"))
-})
-
 //logic for sending email
 app.post("/send", (req, res) => {
   const msg = {
@@ -63,6 +55,14 @@ app.post("/send", (req, res) => {
   };
   sgMail.send(msg);
 });
+
+app.get("/admin/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "admin", "build", "index.html"))
+})
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"))
+})
 
 app.listen(PORT, () => {
   console.log(`Your server is running on port ${PORT}`);
