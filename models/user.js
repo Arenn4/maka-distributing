@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
   }
 })
 
-//encrypts the apssword before saving to the db
+//encrypts the password before saving to the db
 userSchema.pre("save", function(next){
     const user = this;
     if(!user.isModified("password")) return next();

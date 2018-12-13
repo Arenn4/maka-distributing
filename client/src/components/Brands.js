@@ -21,7 +21,6 @@ class Brands extends Component {
       <div className="brands-title">Check out our products</div>
       <div className="brands-container">
         {this.props.breweryData.map(brewers => {
-          console.log(brewers)
           return <BrandList 
                     key={brewers._id}
                     name={brewers.name}
@@ -29,6 +28,7 @@ class Brands extends Component {
                     logo={brewers.logo}/>
         })}
       </div>
+      
       </Fragment>
      )
   }

@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import '../styles/brands.css'
+import React, { Fragment, Component } from 'react';
+import '../styles/brands.css';
 
 const BrandList = (props) => {
     console.log(props.link)

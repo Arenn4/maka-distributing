@@ -9,7 +9,7 @@ const Header = () => {
         <img src={logo} className="logo" alt=""/>
         <div className="headerText">
             <span className="headerTitle">AJ Maka Distributing</span><br></br>
-            <span className="headerSubTitle">Growing your Brand in ChicagoLand.</span>
+            <span className="headerSubTitle">Growing your Brand in ChicagoLand!</span>
         </div>
     </div>
   );

@@ -4,6 +4,8 @@
   font-family: "deadFont";
   src: url("../fonts/TheDeadAreComing.ttf");
 }
+/* TEST CSS */
+
 
 /* ////////Brands//////////////// */
 .brands-title{
@@ -29,7 +31,7 @@
         rgba(0, 0, 0, 0.72) 100%
       ),
       url("https://images.unsplash.com/photo-1498830204877-434556b153df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=87bf5545cab0e4c06c71e62bcd80a3f3&auto=format&fit=crop&w=2250&q=80");
-    background-color: black;
+    
     color: black;
     font-family: "deadFont";
     font-size: 3em;
@@ -39,12 +41,14 @@
     padding-bottom: 50px;
     position: relative;
     grid-template-columns: repeat(auto-fill,minmax(220px, 1fr));
+    grid-template-rows: 164px;
     justify-items: center;
     grid-gap: 25px;
-    height: 100%;
+    height: auto;
     width: 100%;
     padding: 20px;
-  }
+    overflow: hidden;
+  } 
 
 
 
@@ -55,22 +59,22 @@
     width: 240px;
     display: grid;
     justify-items: center;
-    height: auto;
-    /* background-image: url("https://www.ppt-backgrounds.net/thumbs/wanted-poster-for-cowboy-party-photo-presentation-backgrounds.jpg"); */
+    height: auto; 
+    /* background-image: url("https://www.ppt-backgrounds.net/thumbs/wanted-poster-for-cowboy-party-photo-presentation-backgrounds.jpg");  */
     background-color: rgba(0, 0, 0, 0.514);
     /* opacity: 0.6;
     filter: alpha(opacity=50); */
   }
 
-  .brand-box:hover{
+.brand-box:hover{
     width: 245px;
     height: 180px;
     border: 2px solid black;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px black; 
     /* background-color: white; */
     /* opacity: 1;
     filter: alpha(opacity=100); */
-  }
+}
 
   .brand-image{
     grid-column: 1/-1;

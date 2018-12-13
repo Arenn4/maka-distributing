@@ -23,6 +23,7 @@ const initState = {
     loading: true
 }
 
+
 //GET DATA
 export const getBrands = () => {
     return dispatch => { 

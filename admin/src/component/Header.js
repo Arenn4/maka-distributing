@@ -11,7 +11,7 @@ const Header = (props) => {
                 {/* <span className="logOutAdmin"><i class="fas fa-user"></i>Admin</span> */}
                 <img className="header-logo"src={logo} alt="" />
                 <span className="headerText">AJ MAKA DISTRIBUTING</span>
-                {isAuthenticated && <div className="headerIcons"><span><Link to="/"><i className="fas fa-home homeBtn"></i></Link></span><span onClick={props.logout} className="logOutText">Logout</span></div>}
+                {isAuthenticated && <div className="headerIcons"><span><a href="/"><i className="fas fa-home homeBtn"></i></a></span><span onClick={props.logout} className="logOutText">Logout</span></div>}
         </div>
     );
 };

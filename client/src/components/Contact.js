@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { sendEmail } from '../redux'
-import "../styles/contact.css"
+import { connect } from 'react-redux';
+import { sendEmail } from '../redux';
+import "../styles/contact.css";
 
 class Contact extends Component{
 constructor(){
@@ -54,7 +54,7 @@ constructor(){
                       <div className="row">
                           <div className="input-field col s12">
                               <input value={this.state.email} type="email" name="email" className="validate white-text" onChange={this.handleChange}/>
-                              <label >Email</label>
+                              <label >Enter Email Address</label>
                           </div>
                       </div>
                       <div className="row">

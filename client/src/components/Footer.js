@@ -23,9 +23,9 @@ const Footer = () => {
         </div>
 
         <div className="footerIcons">
-          <a href="https://twitter.com/ajmakadistro?lang=en"><i className="fab fa-twitter-square" /></a>
-          <a href="https://www.instagram.com/ajmakadistro/"><i className="fab fa-instagram" /></a>
-          <a href="https://www.facebook.com/pages/A-J-Maka-Distributors/676586775809191"><i className="fab fa-facebook-square" /></a>
+          <a href="https://twitter.com/ajmakadistro?lang=en" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square" /></a>
+          <a href="https://www.instagram.com/ajmakadistro/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram" /></a>
+          <a href="https://www.facebook.com/pages/A-J-Maka-Distributors/676586775809191" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-square" /></a>
         </div>
       </div >
     // </div >
